@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.clear {
+    clear: both;
+    display: table;
+}
+#wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 750px;
+    padding: 5%;
+    box-sizing: border-box;
+}
+#profile {
+    width: 100%;
+}
+#profile::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#profile-picture {
+    padding: 1px;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    float: left;
+}
+#profile-picture > img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+#profile-texts {
+    padding: 10px 0;
+    margin-left: 4%;
+    width: 35.4%;
+    float: left;
+}
+#profile-contact {
+    padding: 20px 0;
+    width: 35%;
+    float: right;
+}
+#profile-contact > ul {
+    text-align: right;
+    list-style: none;
+}
+#profile-contact > ul > li {
+    margin-top: 4px;
+    font-size: 15px;
+    color: #aaaaaa;
+}
+#profile-contact > ul > li > i {
+    margin-left: 8px;
+    font-size: 18px;
+    color: #222222;
+}
+#profile-texts > h3 {
+    padding: 2px 0;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #3b3b3b;
+}
+#profile-texts > h3::after,
+#profile-texts > h3::before {
+    display: none;
+}
+.bold {
+    font-weight: 800;
+    color: #444444;
+}
+#profile-texts > h4 {
+    padding: 2px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/*start about me*/
+#about-me {
+    padding-top: 30px;
+    width: 100%;
+}
+#about-me > p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+h3 {
+    font-weight: 700;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    position: relative;
+    color: #3b3b3b;
+}
+h3::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #aaaaaa;
+    z-index: 5;
+}
+h3::before {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 3px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-color: #3b3b3b;
+    z-index: 10;
+}
+.module {
+    margin-top: 50px;
+}
+.module:first-child {
+    margin-top: 0;
+}
+.module-heading {
+    width: 100%;
+    height: 36px;
+    margin-bottom: 10px;
+}
+.module-heading > h3 {
+    width: 64.7%;
+    float: right;
+    position: relative;
+}
+.module-heading > h3 > i {
+    font-size: 26px;
+    margin-right: 10px;
+    position: absolute;
+    top: 2px;
+    left: -45px;
+}
+.right-module {
+    padding-top: 10px;
+    width: 70%;
+    padding-left: 30px;
+    display: block;
+    float: right;
+    box-sizing: border-box;
+    position: relative;
+}
+.right-module::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #aaaaaa;
+    position: absolute;
+    top: 0;
+    left: -0px;
+}
+.right-module::before {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    background-color: #aaaaaa;
+    position: absolute;
+    top: 16px;
+    left: -4px;
+}
+.left-module {
+    padding-top: 10px;
+    padding-right: 30px;
+    width: 30%;
+    box-sizing: border-box;
+    display: block;
+    text-align: right;
+    float: left;
+}
+.left-module h4,h5 {
+    font-size: 14px;
+    font-weight: 500;
+}
+.right-module h4,h5 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #8d8d8d;
+}
+.left-module h4,
+.right-module h4 {
+    text-transform: capitalize;
+    font-weight: 800;
+    color: #222222;
+}
+.gray {
+    color: #8d8d8d;
+}
+
+/*skilles and languages*/
+.skills-languages > .module {
+    margin-top: 30px;
+    width: 45%;
+}
+.skilles {
+    float: left;
+}
+.languages {
+    float: right;
+}
+.skills-languages > .module > h3 {
+    width: 100%;
+}
+.module-list > ul {
+    margin-top: 20px;
+    list-style: none;
+}
+.module-list > ul > li {
+    border-bottom: 1px dotted #8d8d8d;
+    padding-bottom: 4px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.module-list > ul > li > i {
+    margin-right: 10px;
+}

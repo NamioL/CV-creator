@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="./cv-style.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>CV-builder</title>
+</head>
+<body>
+    <div id="all">
+        <div class="form-module">
+            <div class="form-contanct-info">
+                <h2>contact info</h2>
+                <form action="" method="post">
+                    <!--user name-->
+                    <div class="input-field">
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname">
+                    </div>
+                    <!--user surname-->
+                    <div class="input-field">
+                        <label for="Sname">Surname:</label>
+                        <input type="text" id="sname" name="sname">
+                    </div>
+                    <!--profession-->
+                    <div class="input-field">
+                        <label for="profession">profession:</label>
+                        <input type="text" id="iprofession" name="profession">
+                    </div>
+                    <!--user phone number-->
+                    <div class="input-field">
+                        <label for="phoneNumber">Phone:</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber">
+                    </div>
+                    <!--user email-->
+                    <div class="input-field">
+                        <label for="email">email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <!--user personal website, blog, etc-->
+                    <div class="input-field">
+                        <label for="pwebsite">Personal website:</label>
+                        <input type="type" id="pwebsite" name="pwebsite">
+                    </div>
+                    <!-- user location -->
+                    <div class="input-field">
+                        <label for="location">Location:</label>
+                        <input type="type" id="location" name="location">
+                    </div>
+                </form>
+            </div>
+            <button id="contact-next">next</button>
+        </div> <!--module of contact info end-->
+        <div class="form-module">
+            <div class="form-about-me">
+                <h2>about user</h2>
+                <form action="">
+                    <input id="about-user" name="about-user" placeholder="Say something about yourself">
+                </input>
+                </form>
+                <button id="about-next">save and next</button>
+            </div>
+        </div><!--module of about us end-->
+        <div class="form-module">
+            <div class="form-user-experience">
+                <h2>working experience</h2>
+            </div>
+            <button id="add-more">add</button>
+            <button id="next">next and save</button>
+        </div><!--module of experience end-->
+        <div class="form-module">
+            <div class="form-user-education">
+                <h2>education</h2>
+            </div>
+            <button id="add-more-education">add</button>
+            <button id="next-education">next and save</button>
+        </div><!--module of  education end-->
+        <div class="form-module">
+            <div class="form-user-trainings">
+                <h2>trainings</h2>
+            </div>
+            <button id="add-more-training">add</button>
+            <button id="next-training">next and save</button>
+        </div><!--module of training end-->
+        <div class="form-module">
+            <div class="form-user-skilles">
+                <h2>Skilles</h2>
+            </div>
+            <button id="add-skill">add skill</button>
+            <button id="next-skill">next</button>
+        </div><!--module of skilles end-->
+        <div class="form-module">
+            <div class="form-user-languages">
+                <h2>Languages</h2>
+            </div>
+            <button id="add-language">add Language</button>
+            <button id="save-and-generate">Save and Generate CV</button>
+        </div><!--module of languages end-->
+    </div>
+    <!--wrapper start-->
+    <div id="wrapper"> 
+        <!--header start-->
+        <div id="header">
+            <!--profile start-->
+            <div id="profile">
+                <!--profile picture start-->
+                <div id="profile-picture">
+                    <img src="../../test/profile.jpg" alt=" My picture" title="My picture" />
+                </div>
+                <!--profile picture end-->
+                <!--profile texts start-->
+                <div id="profile-texts">
+                    <h3 id="first-name"></h3>  <!-- first name-->
+                    <h3><span id="last-name" class="bold"></span></h3> <!-- last name-->
+                    <h4 id="profession"></h4> <!-- profesion title-->
+                </div>
+                <!--profile texts end-->
+                <!--profile contact information start-->
+                    <div id="profile-contact">
+                        <ul>
+                            <li><span id="cv-phone-number"></span> <i class="fas fa-phone-square-alt"></i></li>
+                            <li><span id="cv-email"></span><i class="fas fa-envelope"></i></li>
+                            <li><span id="cv-webpage"></span><i class="fab fa-internet-explorer"></i></li>
+                            <li><span id="cv-location"></span><i class="fas fa-map-marker-alt"></i></li>
+                        </ul>
+                    </div>
+                <!--profile contact information end-->
+            </div>
+            <!--profile end-->
+        </div>
+        <!--header end-->
+        <!--about me start-->
+        <div id="about-me">
+            <h3>about me</h3>
+            <p id="cv-about"></p>
+        </div>
+        <!-- about me end-->
+        <!-- start experience section-->
+            <!--start experience module-->
+            <div id="experience-module" class="module">
+                <!--module heading-->
+                <div class="module-heading">
+                    <h3><i class="fas fa-info-circle"></i>experience</h3>
+                </div>
+                <!-- module heading end-->
+            </div>
+            <!-- end experience module-->
+             <!--start education module-->
+             <div id="education-module" class="module">
+                <!--module heading-->
+                <div class="module-heading">
+                    <h3><i class="fas fa-university"></i>education</h3>
+                </div>
+                <!-- module heading end-->
+            </div>
+            <!-- end education module-->
+             <!--start trainings module-->
+             <div id="trainings-module" class="module">
+                <!--module heading-->
+                <div class="module-heading">
+                    <h3><i class="fas fa-award"></i>trainings</h3>
+                </div>
+                <!-- module heading end-->
+            </div>
+            <!-- end experience module-->
+            <!-- skills and languages start-->
+            <div class="skills-languages">
+                <!--skills start-->
+                <div class="module skilles">
+                    <h3>Skilles</h3>
+                    <div id="skilles-module-list" class="module-list">
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <!-- skilles end -->
+                <!--languages start-->
+                <div class="module languages">
+                    <h3>languages</h3>
+                    <div id="languages-module-list" class="module-list">
+                        <ul>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <!-- languages end -->
+                <div class="clear"></div><!-- clear-->
+            </div>
+            <!--skills and languages end-->
+        <!--end experience sectioon-->
+    </div>
+    <!--wrapper end--> 
+    <script src="./moduleAnimation.js"></script>
+    <script src="./createElement.js"></script>
+    <script src="./createDOM.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script src='./jspdf.debug.js'></script>
+    <script src="./app.js"></script>
+    <script src="./generateCV.js"></script>
+</body>
+</html>
